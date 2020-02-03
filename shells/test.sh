@@ -1,0 +1,12 @@
+python test/test_saliency.py \
+    --dataset-dir data \
+    --input-normalize \
+    --arch PFPN \
+    --side-output \
+    --loss-func SaliencyLoss \
+    --max-size 300 \
+    --crop-size 256 \
+    --resume models/PFPN_res_2fpm/Adam_60ep_0.0001lr/ \
+    --vis \
+    --vis-dir res_vis/PFPN \
+    --datasets ECSSD PASCAL-S DUTS DUT-OMRON HKU-IS
